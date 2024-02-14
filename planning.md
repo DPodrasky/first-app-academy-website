@@ -57,7 +57,7 @@ Page 2, contact.html
 ---
 | textarea for q | \# two wide
 ---
-| submit button |
+| submit button | subscribe checkbox |
 ---
 ---
 page 3, education.html

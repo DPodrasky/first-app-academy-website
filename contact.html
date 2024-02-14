@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head lang="en-US">
+        <link class="favicon" rel="icon" href="https://imgur.com/nYtWLHk"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+        </style>
+        <meta charset="utf-8">
+        <title>Contact Us With Questions of Comments</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav-bar">
+                <a href="index.html"target="_blank">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="education.html" target="_blank">Education</a>
+                <a href="popular-watches.html" target="_blank">Popular Watches</a>
+            </div>
+        </header>
+        <form action="/dummy-url" method="post">
+            <fieldset>
+                <div class="fieldset-grid">
+                    <div class="grid-item">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="your_name">
+                    </div>
+                    <div class="grid-item">
+                        <label for="email">email address:</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
+                    <div class="grid-item-wide">
+                        <label for="subject">What is the subject of your message?</label>
+                        <input type="text" id="subject" name="message_subject">
+                    </div>
+                    <div class="grid-item-wide">
+                        <label for="message">Please enter your message below:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="grid-item">
+                        <button type="submit" id="submit-button">Submit message</button>
+                    </div>
+                    <div class="grid-item">
+                        <input type="checkbox" id="subscribe" name="subscribe-checkbox">
+                        <label for="subscribe">Subscribe to our monthly newsletter</label>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
