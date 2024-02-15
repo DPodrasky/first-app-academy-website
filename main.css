@@ -1,0 +1,413 @@
+.favicon {
+    border-radius: 50%;
+}
+
+body {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    align-items: center;
+  }
+
+.main-image {
+    position: relative;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    width: 40%;
+}
+
+.columns-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+form {
+    height: 100%;
+}
+
+fieldset {
+
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #023d6a;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contact-heading {
+    z-index: 2;
+    font-size: 48px;
+    background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+    background-clip: text;
+    color: transparent;
+}
+
+.fieldset-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 20%;
+    padding: 10px 10px 25px 10px;
+}
+
+.grid-item-newsletter {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.grid-item {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1%;
+
+}
+
+.grid-item-wide {
+    display: inline-flex;
+    flex-direction: column;
+    grid-column: span 2;
+    padding: 1%;
+
+}
+
+.subscribe-label {
+    color: white;
+}
+
+#subscribe {
+    margin-bottom: 35px;
+}
+
+#submit-button {
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+    color: white;
+    border: 4px solid white;
+}
+
+
+
+.column {
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+.nav-bar {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70px;
+    background-color: #d4d1d1;
+    margin-top: 0;
+}
+
+.nav-bar a {
+    padding-top: 23px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+@media (max-width: 750px) {
+    .columns-container {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-bar a {
+        padding-top: 23px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+    color: #0496db
+}
+
+.nav-bar a:visited {
+    text-decoration: none;
+    color: #023d6a
+}
+
+header {
+    width: 100%;
+}
+
+@media (min-width:1412px) {
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15%;
+        padding: 10px 10px 75px 10px;
+    }
+    .overlay-title-top {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        font-size: 72px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+    }
+    .subscribe-label {
+        z-index: 2;
+        font-size: 24px;
+        color: white;
+    }
+    #subscribe {
+        padding: 0;
+        margin: 0;
+        width: 25px;
+        margin-bottom: 20px;
+    }
+    #submit-button {
+        position: relative;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        color: white;
+        border: 4px solid white;
+        bottom: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .overlay-title-top {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+    }
+    .contact-heading {
+        position: relative;
+        z-index: 2;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+        align-self: center;
+        margin-left: 4%;
+    }
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 5%;
+        padding: 10px 10px 25px 10px;
+    }
+    .grid-item-wide {
+        display: inline-flex;
+        grid-column: span 1;
+        flex-direction: column;
+        padding: 1%;
+
+    }
+    .subscribe-label {
+        position: relative;
+        z-index: 2;
+        font-size: 16px;
+        color: white;
+        top: 11px;
+    }
+    #subscribe {
+        position: relative;
+        padding: 0;
+        top: 10px;
+    }
+    #submit-button {
+        position: relative;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        color: white;
+        border: 4px solid white;
+        bottom: 15px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 10%;
+        padding: 10px 10px 35px 10px;
+
+    }
+    .overlay-title-top {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        font-size: 24px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+    }
+    #subscribe {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 25px;
+        bottom: 15%;
+    }
+    .subscribe-label {
+        position: relative;
+        z-index: 2;
+        font-size: 18px;
+        color: white;
+        bottom: 10%;
+        left: 10%;
+    }
+    .contact-heading {
+        position: relative;
+        z-index: 2;
+        font-size: 24px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+        align-self: center;
+        margin-left: 8%;
+    }
+}
+
+@media (min-width: 701px) and (max-width:940px) {
+    .overlay-title-top {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        font-size: 34px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+    }
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 15%;
+        padding: 10px 10px 35px 10px;
+    }
+    .grid-item-newsletter {
+        position: relative;
+        justify-content: flex-start;
+        margin-right: 10px;
+    }
+
+    .grid-item-wide {
+        display: inline-flex;
+        grid-column: span 1;
+        flex-direction: column;
+        padding: 1%;
+
+    }
+    #subscribe {
+        position:relative;
+        padding: 0;
+        width: 50px;
+        right: 10px;
+        top: 6px;
+    }
+    .subscribe-label {
+        position: relative;
+        z-index: 2;
+        font-size: 16px;
+        color: white;
+        right: 15px;
+        top: 10px;
+    }
+    #submit-button {
+        position: relative;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        color: white;
+        border: 4px solid white;
+        bottom: 8px;
+        right: 15px;
+    }
+    .contact-heading {
+        position: relative;
+        z-index: 2;
+        font-size: 24px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+        align-self: center;
+        margin-left: 12%;
+    }
+}
+
+@media (min-width: 941px) and (max-width: 1411px) {
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 10%;
+        padding: 10px 10px 45px 10px;
+    }
+    .overlay-title-top {
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        font-size: 48px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+    }
+    .subscribe-label {
+        position: relative;
+        z-index: 2;
+        font-size: 24px;
+        color: white;
+        margin-right: 20px;
+    }
+    #subscribe {
+        padding: 0;
+        margin: 0;
+        width: 25px;
+        margin-bottom: 20px;
+    }
+    #submit-button {
+        position: relative;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        color: white;
+        border: 4px solid white;
+        bottom: 8px;
+        right: 20px;
+    }
+}
