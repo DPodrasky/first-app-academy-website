@@ -30,7 +30,6 @@ form {
 }
 
 fieldset {
-
     border: 3px solid white;
     border-radius: 10px;
     background-color: #023d6a;
@@ -79,7 +78,6 @@ fieldset {
     display: inline-flex;
     flex-direction: column;
     padding: 1%;
-
 }
 
 .grid-item-wide {
@@ -87,7 +85,6 @@ fieldset {
     flex-direction: column;
     grid-column: span 2;
     padding: 1%;
-
 }
 
 .subscribe-label {
@@ -124,7 +121,6 @@ fieldset {
     width: 100%;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .resource-list {
@@ -294,11 +290,14 @@ header {
     .overlay-title-top {
         z-index: 2;
         position: absolute;
-        top: 10%;
+        top: 32%;
         font-size: 16px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
+    }
+    .columns-container {
+        flex-direction: column;
     }
     .contact-heading {
         position: relative;
@@ -377,6 +376,14 @@ header {
         grid-row-gap: 20px;
         grid-column-gap: 20px;
     }
+    .nav-bar {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items:center;
+        padding-bottom: 20px;
+        height: 100%;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 700px) {
@@ -387,12 +394,11 @@ header {
         grid-column-gap: 1%;
         grid-row-gap: 10%;
         padding: 10px 10px 35px 10px;
-
     }
     .overlay-title-top {
         z-index: 2;
         position: absolute;
-        top: 10%;
+        top: 12%;
         font-size: 24px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
@@ -481,8 +487,8 @@ header {
         grid-column: span 1;
         flex-direction: column;
         padding: 1%;
-
     }
+
     #subscribe {
         position:relative;
         padding: 0;
@@ -490,6 +496,7 @@ header {
         right: 10px;
         top: 6px;
     }
+
     .subscribe-label {
         position: relative;
         z-index: 2;
@@ -498,6 +505,7 @@ header {
         right: 15px;
         top: 10px;
     }
+
     #submit-button {
         position: relative;
         height: 50px;
@@ -509,6 +517,7 @@ header {
         bottom: 8px;
         right: 15px;
     }
+
     .contact-heading {
         position: relative;
         z-index: 2;
@@ -519,12 +528,14 @@ header {
         align-self: center;
         margin-left: 12%;
     }
+
     .list-img {
         width: 50%;
         transform: rotate(-90deg);
         margin: 0;
         padding: 0;
     }
+
     .ed-heading {
         position: relative;
         z-index: 2;
@@ -535,9 +546,11 @@ header {
         align-self: center;
         right: 2%;
     }
+
     .list-link:hover {
         font-size: 26px;
     }
+
     .watch-img {
         position: relative;
         width: 175px;
@@ -556,6 +569,7 @@ header {
     .watch-grid {
         position: relative;
         padding: 10%;
+}
 }
 
 @media (min-width: 941px) and (max-width: 1411px) {
@@ -635,6 +649,10 @@ header {
         padding-top: 23px;
         text-decoration: none;
         color: black;
+        font-size: 14px;
+    }
+    .overlay-title-top {
+        top: 28%;
         font-size: 14px;
     }
 }
