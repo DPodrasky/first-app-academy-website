@@ -311,7 +311,7 @@ header {
     .overlay-title-top {
         position: absolute;
         z-index: 2;
-        top: 19%;
+        top: 21%;
         font-size: 14px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
