@@ -2,6 +2,16 @@
     border-radius: 50%;
 }
 
+.pop-watch-heading {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+    background-clip: text;
+    color: transparent;
+    align-self: center;
+}
+
 body {
     display: inline-flex;
     flex-direction: column;
@@ -56,7 +66,7 @@ fieldset {
     background-clip: text;
     color: transparent;
     align-self: center;
-    margin-left: 4%;
+    margin-top: 12%;
 }
 
 .fieldset-grid {
@@ -282,20 +292,64 @@ header {
         background-clip: text;
         color: transparent;
         align-self: center;
-        right: 2%;
+        margin-top: 7%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+    .nav-bar a {
+        padding-top: 23px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    .overlay-title-top {
+        top: 19%;
+        font-size: 14px;
+    }
+
+    .pop-watch-heading {
+        font-size: 24px;
+    }
+
+    .nav-bar {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items:center;
+        padding-bottom: 20px;
+        height: 100%;
+    }
+
+    .watch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ed-heading {
+        font-size: 18px;
+    }
+
+    .list-img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
     .overlay-title-top {
         z-index: 2;
         position: absolute;
-        top: 32%;
+        top: 22%;
         font-size: 16px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
     }
+
+    .pop-watch-heading {
+        font-size: 36px;
+    }
+
     .columns-container {
         flex-direction: column;
     }
@@ -353,14 +407,7 @@ header {
         padding: 0;
     }
     .ed-heading {
-        position: relative;
-        z-index: 2;
-        font-size: 18px;
-        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
-        background-clip: text;
-        color: transparent;
-        align-self: center;
-        right: 2%;
+        font-size: 24px;
     }
     .list-link:hover {
         font-size:18px;
@@ -398,7 +445,7 @@ header {
     .overlay-title-top {
         z-index: 2;
         position: absolute;
-        top: 12%;
+        top: 9%;
         font-size: 24px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
@@ -436,14 +483,7 @@ header {
         padding: 0;
     }
     .ed-heading {
-        position: relative;
-        z-index: 2;
-        font-size: 24px;
-        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
-        background-clip: text;
-        color: transparent;
-        align-self: center;
-        right: 2%;
+        font-size: 34px;
     }
     .list-link {
         font-size:18px;
@@ -529,6 +569,10 @@ header {
         margin-left: 12%;
     }
 
+    .pop-watch-heading {
+        margin-left: 0;
+    }
+
     .list-img {
         width: 50%;
         transform: rotate(-90deg);
@@ -568,7 +612,7 @@ header {
     }
     .watch-grid {
         position: relative;
-        padding: 10%;
+        padding: 0 10% 10% 10%;
 }
 }
 
@@ -620,16 +664,11 @@ header {
         margin: 0;
         padding: 0;
     }
+
     .ed-heading {
-        position: relative;
-        z-index: 2;
-        font-size: 48px;
-        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
-        background-clip: text;
-        color: transparent;
-        align-self: center;
-        right: 2%;
+        margin-top: 7%;
     }
+
     .list-link:hover {
         font-size: 28px;
     }
@@ -641,18 +680,5 @@ header {
         flex-direction: column;
         justify-content: space-evenly;
         width: 80%;
-    }
-}
-
-@media (max-width: 400px) {
-    .nav-bar a {
-        padding-top: 23px;
-        text-decoration: none;
-        color: black;
-        font-size: 14px;
-    }
-    .overlay-title-top {
-        top: 28%;
-        font-size: 14px;
     }
 }
