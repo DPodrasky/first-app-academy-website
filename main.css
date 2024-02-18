@@ -247,7 +247,7 @@ header {
     margin: 10px auto;
 }
 
-@media (min-width:1412px) {
+@media (min-width:1081px) {
     .fieldset-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -264,6 +264,7 @@ header {
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
+        text-align: center;
     }
     .subscribe-label {
         z-index: 2;
@@ -300,7 +301,7 @@ header {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 359px) {
     .nav-bar a {
         padding-top: 23px;
         text-decoration: none;
@@ -320,7 +321,8 @@ header {
     }
 
     .pop-watch-heading {
-        font-size: 24px;
+        font-size: 36px;
+        text-align: center;
     }
 
     .nav-bar {
@@ -337,17 +339,20 @@ header {
     }
 
     .ed-heading {
-        font-size: 18px;
+        font-size: 36px;
+        text-align: center;
     }
 
     .list-img {
         width: 60%;
+        text-align: center;
+
     }
 
     .contact-heading {
-        font-size: 16px;
+        font-size: 24px;
         justify-self: center;
-        margin-left: 4%;
+        text-align: center;
     }
 
     .fieldset-grid {
@@ -393,15 +398,16 @@ header {
 
 }
 
-@media (min-width: 401px) and (max-width: 500px) {
+@media (min-width: 360px) and (max-width: 768px) {
     .overlay-title-top {
         z-index: 2;
         position: absolute;
         top: 22%;
-        font-size: 16px;
+        font-size: 24px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
+        text-align: center;
     }
 
     .pop-watch-heading {
@@ -415,12 +421,12 @@ header {
     .contact-heading {
         position: relative;
         z-index: 2;
-        font-size: 16px;
+        font-size: 36px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
         align-self: center;
-        margin-left: 4%;
+        text-align: center;
     }
 
     .fieldset-grid {
@@ -444,12 +450,12 @@ header {
         z-index: 2;
         font-size: 16px;
         color: white;
-        top: 11px;
+
     }
     #subscribe {
         position: relative;
         padding: 0;
-        top: 10px;
+
     }
     #submit-button {
         position: relative;
@@ -460,7 +466,9 @@ header {
         color: white;
         border: 4px solid white;
         bottom: 15px;
+        left: 2px;
     }
+
     .list-img {
         width: 60%;
         transform: rotate(-90deg);
@@ -468,7 +476,8 @@ header {
         padding: 0;
     }
     .ed-heading {
-        font-size: 24px;
+        font-size: 48px;
+        text-align: center;
     }
     .list-link:hover {
         font-size:18px;
@@ -492,9 +501,16 @@ header {
         padding-bottom: 20px;
         height: 100%;
     }
+
+    .pop-watch-heading {
+        font-size: 48px;
+        text-align: center;
+    }
+
+
 }
 
-@media (min-width: 501px) and (max-width: 700px) {
+/* @media (min-width: 501px) and (max-width: 700px) {
     .fieldset-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -557,9 +573,9 @@ header {
         grid-row-gap: 20px;
         grid-column-gap: 20px;
     }
-}
+} */
 
-@media (min-width: 701px) and (max-width:940px) {
+/*  @media (min-width: 701px) and (max-width:940px) {
     .overlay-title-top {
         z-index: 2;
         position: absolute;
@@ -674,25 +690,34 @@ header {
         position: relative;
         padding: 0 10% 10% 10%;
 }
-}
+} */
 
-@media (min-width: 941px) and (max-width: 1411px) {
-    .fieldset-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 1%;
-        grid-row-gap: 10%;
-        padding: 10px 10px 45px 10px;
+@media (min-width: 769px) and (max-width: 1080px) {
+
+    .nav-bar {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 20px;
     }
+
+    form {
+        width: 80%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
     .overlay-title-top {
         z-index: 2;
         position: absolute;
-        top: 10%;
+        top: 20%;
         font-size: 48px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
         background-clip: text;
         color: transparent;
+        text-align: center;
     }
     .subscribe-label {
         position: relative;
@@ -731,6 +756,71 @@ header {
 
     .list-link:hover {
         font-size: 28px;
+    }
+
+    .columns-container {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .contact-heading {
+        position: relative;
+        z-index: 2;
+        font-size: 48px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        background-clip: text;
+        color: transparent;
+        align-self: center;
+        text-align: center;
+    }
+
+    .fieldset-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 5%;
+        padding: 10px 10px 25px 10px;
+    }
+
+    .grid-item-wide {
+        display: inline-flex;
+        grid-column: span 1;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .subscribe-label {
+        position: relative;
+        z-index: 2;
+        font-size: 16px;
+        color: white;
+
+    }
+    #subscribe {
+        position: relative;
+        padding: 0;
+
+    }
+    #submit-button {
+        position: relative;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 16px;
+        background: linear-gradient(270deg, #212121, #0496db, #023d6a);
+        color: white;
+        border: 4px solid white;
+        bottom: 15px;
+        left: 2px;
+    }
+    .watch-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
     }
 }
 
