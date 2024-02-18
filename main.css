@@ -258,7 +258,7 @@ header {
     }
     .overlay-title-top {
         z-index: 2;
-        position: absolute;
+        position: relative;
         top: 10%;
         font-size: 72px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
@@ -310,7 +310,7 @@ header {
     }
 
     .overlay-title-top {
-        position: absolute;
+        position: relative;
         z-index: 2;
         top: 21%;
         font-size: 14px;
@@ -401,7 +401,7 @@ header {
 @media (min-width: 360px) and (max-width: 768px) {
     .overlay-title-top {
         z-index: 2;
-        position: absolute;
+        position: relative;
         top: 22%;
         font-size: 24px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
@@ -711,7 +711,7 @@ header {
 
     .overlay-title-top {
         z-index: 2;
-        position: absolute;
+        position: relative;
         top: 20%;
         font-size: 48px;
         background: linear-gradient(270deg, #212121, #0496db, #023d6a);
