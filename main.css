@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
 .favicon {
     border-radius: 50%;
 }
