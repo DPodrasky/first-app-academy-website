@@ -291,7 +291,9 @@ header {
     }
     .list-link:hover {
         font-size: 28px;
+        list-style-type: none;
     }
+    
     .ed-heading {
         position: relative;
         z-index: 2;
@@ -454,6 +456,7 @@ header {
         color: white;
 
     }
+    
     #subscribe {
         position: relative;
         padding: 0;
@@ -483,9 +486,11 @@ header {
     }
     .list-link:hover {
         font-size:18px;
+        list-style-type: none;
     }
     .list-link {
         font-size: 16px;
+        list-style-type: none;
     }
     .watch-grid {
         position: relative;
@@ -566,6 +571,7 @@ header {
     }
     .list-link {
         font-size:18px;
+        list-style-type: none;
     }
     .watch-grid {
         position: relative;
@@ -671,6 +677,7 @@ header {
 
     .list-link:hover {
         font-size: 26px;
+        list-style-type: none;
     }
 
     .watch-img {
@@ -758,6 +765,7 @@ header {
 
     .list-link:hover {
         font-size: 28px;
+        list-style-type: none;
     }
 
     .columns-container {
