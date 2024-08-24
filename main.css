@@ -159,6 +159,7 @@ fieldset {
     font-size:24px;
     color: #212121;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .list-link:hover {
@@ -167,6 +168,7 @@ fieldset {
     background: linear-gradient(270deg, #212121, #0496db, #023d6a);
     background-clip: text;
     color: transparent;
+    list-style-type: none;
     }
 
 .list-img {
